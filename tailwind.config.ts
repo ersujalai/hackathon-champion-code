@@ -31,6 +31,14 @@ export default {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
@@ -46,6 +54,13 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        cyber: {
+          blue: "hsl(var(--cyber-blue))",
+          purple: "hsl(var(--cyber-purple))",
+          green: "hsl(var(--cyber-green))",
+          orange: "hsl(var(--cyber-orange))",
+          red: "hsl(var(--cyber-red))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
@@ -80,10 +95,43 @@ export default {
             height: "0",
           },
         },
+        "pulse-glow": {
+          "0%, 100%": {
+            boxShadow: "0 0 5px currentColor",
+          },
+          "50%": {
+            boxShadow: "0 0 20px currentColor, 0 0 30px currentColor",
+          },
+        },
+        "float": {
+          "0%, 100%": {
+            transform: "translateY(0px)",
+          },
+          "50%": {
+            transform: "translateY(-10px)",
+          },
+        },
+        "scan": {
+          "0%": {
+            transform: "translateX(-100%)",
+          },
+          "100%": {
+            transform: "translateX(100%)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "pulse-glow": "pulse-glow 2s ease-in-out infinite",
+        "float": "float 3s ease-in-out infinite",
+        "scan": "scan 2s linear infinite",
+      },
+      backgroundImage: {
+        "gradient-cyber": "var(--gradient-primary)",
+        "gradient-danger": "var(--gradient-danger)",
+        "gradient-success": "var(--gradient-success)",
+        "gradient-glass": "var(--gradient-glass)",
       },
     },
   },
